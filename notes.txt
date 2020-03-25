@@ -2,3 +2,8 @@ en faisanty en ls -lR je vois :
 	* dans www : level04 et level12 -> on peut acceder au fichier via le navigateur
 	* dans mail il y a le level05
 
+pour level00 : regarder techniques privilege escalation
+		regarder les files d'apache2
+		dans /etc/apparmor.d/anstractions les ssl_cets et keys
+
+dans /etc/passwd il y a le pwd pour flag01 mais ca ne marche pas 
