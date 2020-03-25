@@ -1,0 +1,17 @@
+We see that it's impossible to do almost anything.
+
+We look for the file that our user or flag00 can manipulate :
+
+find / -user flag00 2>/dev/null
+
+gives /user/sbin/john
+
+cat  /user/sbin/john
+cdiiddwpgswtgt
+
+it's not possible to su flag00 with this. 
+We try to decypher it with a caesar code and a 15 shift:
+
+nottoohardhere
+
+ithe token is x24ti5gi3x0ol2eh4esiuxias
