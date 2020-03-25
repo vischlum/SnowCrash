@@ -1,0 +1,4 @@
+en faisanty en ls -lR je vois :
+	* dans www : level04 et level12 -> on peut acceder au fichier via le navigateur
+	* dans mail il y a le level05
+
