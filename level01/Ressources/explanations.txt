@@ -1,0 +1,18 @@
+We find that /etc/passwd contains something for flag01
+
+flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+
+we know that this is is a hashed password,
+
+we use john the ripper to crack the password 
+
+we create a file called hashes.txt containing flag01:42hDRfypTqqnw
+
+ans then 
+
+sudo john hashes.txt we we get the following output :
+
+Proceeding with wordlist:/usr/share/john/password.lst, rules:Wordlist
+abcdefg          (flg01)
+
+
