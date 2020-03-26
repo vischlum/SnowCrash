@@ -26,15 +26,13 @@ void study_handle(pcap_t *handle)
 
 int main(int ac, char **av)
 {
-	FILE *file;
 
 	pcap_t *handle;
 	char error_buffer[PCAP_ERRBUF_SIZE];
 
 	if (ac < 2)
 		return (1);
-	file =fopen(av[1], "r");
-	handle = pcap_fopen_offline(file, error_buffer);
+	handle = pcap_open_offline(av[1], error_buffer);
 	if (handle == NULL)
 	{
 		printf("%s\n", error_buffer);
@@ -43,6 +41,5 @@ int main(int ac, char **av)
 	}
 	study_handle(handle);
 	pcap_close(handle);
-	fclose(file);
 	return (0);
 }
