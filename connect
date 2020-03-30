@@ -1,3 +1,13 @@
 #!/bin/bash
 
-ssh -p4242 level$1@192.168.56.103
+connect(){
+FILE="./level$2/flag"
+if [ -e $FILE -a -s $FILE ]; then
+	echo "flag found"
+	cat $FILE
+	ssh -p4242 level$1@192.168.56.103
+else
+	echo "flag wasn't found"
+fi
+}
+connect $1 $2
