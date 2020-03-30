@@ -1,0 +1,10 @@
+We connect to level04 to find a perl script in the home
+it is also present in /var/www/level04 and the apache2 server is configured to serve it on the 4747 port
+
+it waits for a parameter with the name 'x'.
+
+we craft a GET request in the navigator IP:4747?x=somethin
+
+it will print something, we want to execute getflag so we put ` around the cmd.
+
+IP:4747?x=`getflag` gets us the flag for level05 because the script is run as flag04
