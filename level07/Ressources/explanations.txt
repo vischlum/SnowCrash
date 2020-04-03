@@ -1,0 +1,16 @@
+for level07 we find a binary. when run it outputs 'level07'.
+With nm we can deduct it calls getenv  and system, with gdb that it creates a srtring with asprintf and then calls system. (eve  easier to find with radare2 but we shall not using for this assignement)
+
+lookinf at an hexdump we can see it call the env variable LOGNAME and put in in the following formated string 
+"./bin/echo %s" 
+
+we have to put the payload in $LOGNAME
+
+export LOGNAME=`getflag` gives us an error.
+
+we use ';' to terminate the first command call and do a second one.
+
+export LOGNAME=;getflag
+./level07
+
+it gives us the flag
