@@ -1,0 +1,13 @@
+at /home/user/level09 we see a binary and a file called token
+
+we test the binaey, it requires an argument
+
+we test with ./level09 aaaa and outputs abcd.
+
+It add the value of the index for each value.
+
+cat token gives us jibberish. We try to use the binary on it but still jibberish.
+
+We write a programm (turner.c) that does the opposite (substract the value of the index).
+
+we get a flag to connect to flag09.
