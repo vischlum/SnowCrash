@@ -1,0 +1,21 @@
+We find an executable and a token that we cannot open
+
+The usage of the program tells us it sends a file to a host if we have access to it
+
+we check the program with the nm function and whith the help of the hint in the usage we look how
+to exploit the acess function.
+
+trying to sends some file we see that the port is 6969
+
+The exploit is a race condition.
+
+We aim to create a file that we have access to, it will be accepted by the program but before it is sent
+we change it by a symbolic link aiming to the token.
+
+WE create two scripts : linking.sh and running.sh to do those action
+
+we listen on port 6969 thanks to netcat and send it to a file
+
+nc -lk 6969 > listener   (-l localhost , k keep listening)
+
+we find the token to su flag10 with cat listener
