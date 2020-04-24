@@ -1,0 +1,21 @@
+we find a lua script that creates a server on port 5151
+
+it waits for the connection of a client then asks for a password
+
+this string is sent to a hash function :
+it uses the function io.popen that is a equivalent of system() in C
+it will executes in a new process the command given in a string
+
+we can add to the command if we give the following password
+
+we use nc to connect to the server
+
+nc localhost 5151
+
+we give the password:
+
+;getflag > /tmp/flag
+
+then 
+
+cat /tmp/flag
