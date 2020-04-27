@@ -1,6 +1,10 @@
-#!/bin/sh
+#!/bin/zsh
 
 name=level$1
 
-cp -r level $name
+mkdir -p $name
+touch $name/flag
+mkdir -p $name/Ressources
+touch $name/Ressources/explanations.txt
+echo  "\e[32m $name created"
 
