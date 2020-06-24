@@ -3,7 +3,7 @@ it is also present in /var/www/level04 and the apache2 server is configured to s
 
 it waits for a parameter with the name 'x'.
 
-we craft a GET request in the navigator IP:4747?x=somethin
+we craft a GET request in the navigator IP:4747?x=something
 
 it will print something, we want to execute getflag so we put ` around the cmd.
 

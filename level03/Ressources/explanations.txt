@@ -59,8 +59,8 @@ int main()
 }
 
 We can see the binary get the group id and it's uid then set them in the process.
-It then callas a system command.
-we use hexdump to find in the binary a string looking like a command call.
+It then call a system command.
+we use hexdump to find in the binary a string looking like a command call or use the 'strings' command
 we find "/usr/bin/env echo Exploit Me"
 
 it calls echo with the environnment variable set in the process.

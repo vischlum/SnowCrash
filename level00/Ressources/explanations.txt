@@ -1,4 +1,4 @@
-We see that it's impossible to do almost anything.
+We see that it's almost impossible to do anything.
 
 We look for the file that our user or flag00 can manipulate :
 
@@ -10,8 +10,8 @@ cat  /user/sbin/john
 cdiiddwpgswtgt
 
 it's not possible to su flag00 with this. 
-We try to decypher it with a caesar code and a 15 shift:
+We try to decypher it with a caesar code (tips is given in video) and a 15 shift:
 
 nottoohardhere
 
-ithe token is x24ti5gi3x0ol2eh4esiuxias
+the token is x24ti5gi3x0ol2eh4esiuxias

@@ -17,10 +17,6 @@ done
 
 it will run scripts in the folder /opt/openarenaserver and then delete them
 
-we set our crontab :
-
-crontab /var/mail/level05
-
 then we write the following script in /opt/openarenaserver
 
 getflag >/tmp/flag
