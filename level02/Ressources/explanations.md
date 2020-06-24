@@ -6,7 +6,7 @@ We follow the TCP stream (right clik > follow > TCP stream)
 
 we find a password : Password: ft_wandr...NDRel.L0L
 
-we use the the hexdump data display to find the value of the periods, it's 7f, wichh in ASCII is 'delete'
+we use the the hexdump data display to find the value of the periods, it's 7f, which in ASCII is 'delete'
 
 then the password would be ft_waNDReL0L
 
