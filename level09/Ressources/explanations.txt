@@ -2,7 +2,7 @@ at /home/user/level09 we see a binary and a file called token
 
 we test the binary, it requires an argument
 
-we test with ./level09 aaaa and outputs abcd.
+we test with ./level09 aaaa and it outputs abcd.
 
 It add the value of the index for each value.
 
