@@ -9,5 +9,5 @@ We must find a way to inject our own `getflag` command while avoiding the regex.
 Because of the space removal, we will make the `egrep` command execute a script:
 - We put our script in `/tmp/EXPLOIT` (in all caps, because Linux is case sensitive).
 - `chmod 777 /tmp/EXPLOIT` to make sure that every user can launch it.
-- We open a browser to make our request: ``<IP>:4646/x=`/*/EXPLOIT` ``(we use \` to make it executable and `*` to avoid the regex uppercasing everything)
+- We open a browser to make our request: ``<IP>:4646/?x=`/*/EXPLOIT` ``(we use \` to make it executable and `*` to avoid the regex uppercasing everything)
 - We get the flag with `cat /tmp/flag`
