@@ -17,5 +17,5 @@ done
 ```
 
 It will run all the scripts in the `/opt/openarenaserver` folder, and delete them afterwards.  
-To use this to our advantage, we write the following script in `/opt/openarenaserver`: `getflag >/tmp/flag`.  
+To use this to our advantage, we write the following script in `/opt/openarenaserver`: `getflag > /tmp/flag`.  
 We wait for the crontab to run (the script will be deleted), and then `cat /tmp/flag`: `Check flag.Here is your token : viuaaale9huek52boumoomiocv`
